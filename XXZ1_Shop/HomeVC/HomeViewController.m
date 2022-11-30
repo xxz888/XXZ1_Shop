@@ -10,10 +10,13 @@
 #import "HomeHeaderView.h"
 #import "ANBannerVIew.h"
 #import "JDMarqueeView.h"
+#import "HomeClassifyViewController.h"
+#import "ShopDetailViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,strong)HomeHeaderView * headerView;
 @property (nonatomic ,assign)CGFloat headerViewHeight;
+@property (nonatomic ,strong)NSMutableArray * fourArray;
 
 @end
 
@@ -27,15 +30,18 @@
     [self getLunbo];
     [self open_item_guess_like];
     [self getPaomadeng];
+
+
 }
+
 -(void)getData{
-    NSString * url = [NSString stringWithFormat:@"https://api.zhetaoke.com:10001/api/open_item_guess_like2.ashx?appkey=f6cfb493dd7843b49b4f9bb5d839c061&sid=160008&page=%ld&page_size=10",self.page];
+    NSString * url = [NSString stringWithFormat:@"https://api.zhetaoke.com:10001/api/open_item_guess_like.ashx?appkey=f6cfb493dd7843b49b4f9bb5d839c061&sid=160008&page=%ld&page_size=10",self.page];
     [XXZHttpUtil getWithURLString:url parameters:@{} success:^(id res) {
         
         if (self.page == 1) {
             [self.dataArray removeAllObjects];
         }
-        [self.dataArray addObjectsFromArray:res[@"tbk_dg_optimus_material_response"][@"result_list"][@"map_data"]];
+        [self.dataArray addObjectsFromArray:res[@"content"]];
         [self requestDataCompleted];
 
     } failure:^(NSError *error) {
@@ -46,25 +52,43 @@
 
 }
 -(void)open_item_guess_like{
-
-    [XXZHttpUtil getWithURLString:@"https://api.zhetaoke.com:10001/api/open_item_guess_like.ashx?appkey=f6cfb493dd7843b49b4f9bb5d839c061" parameters:@{} success:^(id res) {
+    self.fourArray = [[NSMutableArray alloc]init];
+    [XXZHttpUtil getWithURLString:@"https://api.zhetaoke.com:10001/api/open_item_guess_like.ashx?appkey=f6cfb493dd7843b49b4f9bb5d839c061&&sid=160008&page=3&page_size=10" parameters:@{} success:^(id res) {
         
         [self.headerView.img1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",res[@"content"][0][@"pict_url"]]]];
         [self.headerView.img2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",res[@"content"][1][@"pict_url"]]]];
         [self.headerView.img3 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",res[@"content"][2][@"pict_url"]]]];
         [self.headerView.img4 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",res[@"content"][3][@"pict_url"]]]];
 
-        
+        [self.fourArray addObjectsFromArray:res[@"content"]];
         
         
     } failure:^(NSError *error) {
         
     }];
     
+    [self.headerView.img1 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        [self jumpDetail:self.fourArray[0]];
+    }];
     
-
+    [self.headerView.img2 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        [self jumpDetail:self.fourArray[1]];
+    }];
+    
+    [self.headerView.img3 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        [self jumpDetail:self.fourArray[2]];
+    }];
+    
+    [self.headerView.img4 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        [self jumpDetail:self.fourArray[3]];
+    }];
 }
-
+-(void)jumpDetail:(NSDictionary *)startDic{
+    ShopDetailViewController * vc = [[ShopDetailViewController alloc]init];
+    vc.startDic = startDic;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController: vc animated:YES];
+}
 
 -(void)getLunbo{
     [XXZHttpUtil getWithURLString:@"https://api.zhetaoke.com:10001/api/api_lunbo.ashx?appkey=f6cfb493dd7843b49b4f9bb5d839c061&page=1&page_size=20" parameters:@{} success:^(id res) {
@@ -107,6 +131,47 @@
     self.tableView.tableHeaderView = self.headerView;
     self.tableView.sectionHeaderHeight = self.headerViewHeight;
     
+    
+    __weak typeof(self) weakSelf = self;
+    self.headerView.clickSegmentBlock = ^(NSInteger index) {
+        weakSelf.page = index + 4;
+        [weakSelf.dataArray removeAllObjects];
+        [weakSelf getData];
+    };
+    
+    
+    
+    //一级商品分类，值为空：全部商品，1：女装，2：母婴，3：美妆，4：居家日用，5：鞋品，6：美食，7：文娱车品，8：数码家电，9：男装，10：内衣，11：箱包，12：配饰，13：户外运动，14：家装家纺
+
+    [self.headerView.stackView1 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
+        vc.cid = @"1";
+        vc.navTitle = @"女装";
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    [self.headerView.stackView2 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
+        vc.cid = @"2";
+        vc.navTitle = @"母婴";
+
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    [self.headerView.stackView3 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
+        vc.cid = @"9";
+        vc.navTitle = @"男装";
+
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    [self.headerView.stackView4 rf_addTapActionWithBlock:^(UITapGestureRecognizer *gestureRecoginzer) {
+        HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
+        vc.cid = @"6";
+        vc.navTitle = @"美食";
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
 }
 -(HomeHeaderView *)headerView{
     if (!_headerView) {
@@ -127,18 +192,18 @@
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTableViewCell" forIndexPath:indexPath];
     NSDictionary * dic = self.dataArray[indexPath.row];
     cell.cellTitle.text = dic[@"title"];
-    cell.cellPrice.text = [NSString stringWithFormat:@"¥%.2f",[dic[@"zk_final_price"] doubleValue]];
-    cell.cellCount.text = [NSString stringWithFormat:@"已售:%@个",dic[@"coupon_remain_count"]];
-    [cell.cellImv sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https:%@",dic[@"pict_url"]]]];
+    cell.cellPrice.text = [NSString stringWithFormat:@"¥%.2f",[dic[@"quanhou_jiage"] doubleValue]];
+    cell.cellCount.text = [NSString stringWithFormat:@"库存:%@个",dic[@"sellCount"]];
+    [cell.cellImv sd_setImageWithURL:[NSURL URLWithString:dic[@"pict_url"]]];
     
     
     
-    if ([dic[@"zk_final_price"] doubleValue] < 60) {
+    if ([dic[@"quanhou_jiage"] doubleValue] < 60) {
         cell.tip1Lbl.hidden = NO;
         cell.tip2Lbl.hidden = YES;
         cell.tip3Lbl.hidden = YES;
     }
-    else if ([dic[@"zk_final_price"] doubleValue] > 60 && [dic[@"zk_final_price"] doubleValue] < 200) {
+    else if ([dic[@"quanhou_jiage"] doubleValue] > 60 && [dic[@"quanhou_jiage"] doubleValue] < 200) {
         cell.tip1Lbl.hidden = NO;
         cell.tip2Lbl.hidden = NO;
         cell.tip3Lbl.hidden = YES;
@@ -149,7 +214,12 @@
     }
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ShopDetailViewController * vc = [[ShopDetailViewController alloc]init];
+    vc.startDic = self.dataArray[indexPath.row];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController: vc animated:YES];
+}
 #pragma mark ————— 下拉刷新 —————
 -(void)headerRereshing{
     self.page = 1;

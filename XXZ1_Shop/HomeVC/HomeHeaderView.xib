@@ -10,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="HomeHeaderView">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="724"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="733"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4af-hv-Sf9">
@@ -21,23 +21,23 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTE-4E-2lb">
-                    <rect key="frame" x="0.0" y="254" width="414" height="110"/>
+                    <rect key="frame" x="0.0" y="254" width="414" height="100"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xob-eX-A50">
-                            <rect key="frame" x="0.0" y="10" width="414" height="100"/>
+                            <rect key="frame" x="0.0" y="10" width="414" height="90"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbi-iC-acE">
-                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="90"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tabbar_mine_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="OVK-8E-DZp">
-                                            <rect key="frame" x="27" y="5" width="50" height="50"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nvzhuang.png" translatesAutoresizingMaskIntoConstraints="NO" id="OVK-8E-DZp">
+                                            <rect key="frame" x="27" y="0.0" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="DOw-MA-itl"/>
                                                 <constraint firstAttribute="height" constant="50" id="krV-dS-Hit"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家居日用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUF-Vq-Ors">
-                                            <rect key="frame" x="23" y="70" width="57.5" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女装" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUF-Vq-Ors">
+                                            <rect key="frame" x="37.5" y="60" width="29" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -46,23 +46,23 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="kUF-Vq-Ors" firstAttribute="centerX" secondItem="OVK-8E-DZp" secondAttribute="centerX" id="5l4-Co-BTv"/>
-                                        <constraint firstItem="kUF-Vq-Ors" firstAttribute="top" secondItem="OVK-8E-DZp" secondAttribute="bottom" constant="15" id="7IE-W3-kNe"/>
+                                        <constraint firstItem="kUF-Vq-Ors" firstAttribute="top" secondItem="OVK-8E-DZp" secondAttribute="bottom" constant="10" id="7IE-W3-kNe"/>
                                         <constraint firstItem="OVK-8E-DZp" firstAttribute="centerY" secondItem="vbi-iC-acE" secondAttribute="centerY" constant="-20" id="lJp-AZ-lv7"/>
                                         <constraint firstItem="OVK-8E-DZp" firstAttribute="centerX" secondItem="vbi-iC-acE" secondAttribute="centerX" id="t6Y-CQ-inG"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXY-gy-CMw">
-                                    <rect key="frame" x="103.5" y="0.0" width="103.5" height="100"/>
+                                    <rect key="frame" x="103.5" y="0.0" width="103.5" height="90"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tabbar_mine_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="0qn-fX-gUt">
-                                            <rect key="frame" x="27" y="5" width="50" height="50"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongzhuang.png" translatesAutoresizingMaskIntoConstraints="NO" id="0qn-fX-gUt">
+                                            <rect key="frame" x="27" y="0.0" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="NSr-Y2-36p"/>
                                                 <constraint firstAttribute="height" constant="50" id="jb0-nm-DWg"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家居日用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzU-Bl-RHQ">
-                                            <rect key="frame" x="25" y="70" width="53.5" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="母婴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzU-Bl-RHQ">
+                                            <rect key="frame" x="38.5" y="60" width="27" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -72,22 +72,22 @@
                                     <constraints>
                                         <constraint firstItem="0qn-fX-gUt" firstAttribute="centerX" secondItem="XXY-gy-CMw" secondAttribute="centerX" id="1s5-3u-LeR"/>
                                         <constraint firstItem="0qn-fX-gUt" firstAttribute="centerY" secondItem="XXY-gy-CMw" secondAttribute="centerY" constant="-20" id="9cA-be-LiC"/>
-                                        <constraint firstItem="LzU-Bl-RHQ" firstAttribute="top" secondItem="0qn-fX-gUt" secondAttribute="bottom" constant="15" id="GSz-lE-kod"/>
+                                        <constraint firstItem="LzU-Bl-RHQ" firstAttribute="top" secondItem="0qn-fX-gUt" secondAttribute="bottom" constant="10" id="GSz-lE-kod"/>
                                         <constraint firstItem="LzU-Bl-RHQ" firstAttribute="centerX" secondItem="0qn-fX-gUt" secondAttribute="centerX" id="qgR-aD-CdT"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIz-1b-ONg">
-                                    <rect key="frame" x="207" y="0.0" width="103.5" height="100"/>
+                                    <rect key="frame" x="207" y="0.0" width="103.5" height="90"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tabbar_mine_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="BsM-QZ-Xt8">
-                                            <rect key="frame" x="27" y="5" width="50" height="50"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nanzhuang.png" translatesAutoresizingMaskIntoConstraints="NO" id="BsM-QZ-Xt8">
+                                            <rect key="frame" x="27" y="0.0" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="YFy-Rf-IwS"/>
                                                 <constraint firstAttribute="width" constant="50" id="vXm-Dy-imX"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家居日用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kga-Hv-zTU">
-                                            <rect key="frame" x="23" y="70" width="57.5" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男装" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kga-Hv-zTU">
+                                            <rect key="frame" x="37.5" y="60" width="29" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -96,23 +96,23 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="BsM-QZ-Xt8" firstAttribute="centerY" secondItem="BIz-1b-ONg" secondAttribute="centerY" constant="-20" id="GOd-Jt-BPq"/>
-                                        <constraint firstItem="Kga-Hv-zTU" firstAttribute="top" secondItem="BsM-QZ-Xt8" secondAttribute="bottom" constant="15" id="bgf-4b-V71"/>
+                                        <constraint firstItem="Kga-Hv-zTU" firstAttribute="top" secondItem="BsM-QZ-Xt8" secondAttribute="bottom" constant="10" id="bgf-4b-V71"/>
                                         <constraint firstItem="BsM-QZ-Xt8" firstAttribute="centerX" secondItem="BIz-1b-ONg" secondAttribute="centerX" id="gNP-TZ-m3I"/>
                                         <constraint firstItem="Kga-Hv-zTU" firstAttribute="centerX" secondItem="BsM-QZ-Xt8" secondAttribute="centerX" id="gew-tQ-1Kc"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-PZ-WxX">
-                                    <rect key="frame" x="310.5" y="0.0" width="103.5" height="100"/>
+                                    <rect key="frame" x="310.5" y="0.0" width="103.5" height="90"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tabbar_mine_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="kTM-tK-LKT">
-                                            <rect key="frame" x="27" y="5" width="50" height="50"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meishi.png" translatesAutoresizingMaskIntoConstraints="NO" id="kTM-tK-LKT">
+                                            <rect key="frame" x="27" y="0.0" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="XIo-qc-Deo"/>
                                                 <constraint firstAttribute="width" constant="50" id="oB1-Ag-3ZJ"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家居日用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-FI-FCH">
-                                            <rect key="frame" x="23" y="70" width="57.5" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美食" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-FI-FCH">
+                                            <rect key="frame" x="37.5" y="60" width="29" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -120,7 +120,7 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="GSq-FI-FCH" firstAttribute="top" secondItem="kTM-tK-LKT" secondAttribute="bottom" constant="15" id="8Zw-YQ-QHA"/>
+                                        <constraint firstItem="GSq-FI-FCH" firstAttribute="top" secondItem="kTM-tK-LKT" secondAttribute="bottom" constant="10" id="8Zw-YQ-QHA"/>
                                         <constraint firstItem="GSq-FI-FCH" firstAttribute="centerX" secondItem="kTM-tK-LKT" secondAttribute="centerX" id="9pN-mh-H6g"/>
                                         <constraint firstItem="kTM-tK-LKT" firstAttribute="centerX" secondItem="Shp-PZ-WxX" secondAttribute="centerX" id="bwD-Ea-AD0"/>
                                         <constraint firstItem="kTM-tK-LKT" firstAttribute="centerY" secondItem="Shp-PZ-WxX" secondAttribute="centerY" constant="-20" id="wa8-kR-B3y"/>
@@ -133,15 +133,15 @@
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="xob-eX-A50" secondAttribute="bottom" id="BsW-gJ-A8N"/>
                         <constraint firstItem="xob-eX-A50" firstAttribute="top" secondItem="dTE-4E-2lb" secondAttribute="top" constant="10" id="F2z-m3-f3n"/>
-                        <constraint firstAttribute="height" constant="110" id="VFa-eZ-bTt"/>
+                        <constraint firstAttribute="height" constant="100" id="VFa-eZ-bTt"/>
                         <constraint firstItem="xob-eX-A50" firstAttribute="leading" secondItem="dTE-4E-2lb" secondAttribute="leading" id="ZzA-Qu-qK7"/>
                         <constraint firstAttribute="trailing" secondItem="xob-eX-A50" secondAttribute="trailing" id="qRR-2B-CRD"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrI-uE-qqe">
-                    <rect key="frame" x="0.0" y="374" width="414" height="300"/>
+                    <rect key="frame" x="0.0" y="364" width="414" height="300"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-me-LPG">
+                        <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-me-LPG">
                             <rect key="frame" x="191" y="10" width="207" height="280"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
@@ -153,7 +153,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="13b-d3-Llt">
                             <rect key="frame" x="16" y="10" width="159" height="280"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="sg9-dT-5Ud">
+                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="sg9-dT-5Ud">
                                     <rect key="frame" x="0.0" y="0.0" width="159" height="82.5"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -162,7 +162,7 @@
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDU-7B-wLa">
+                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDU-7B-wLa">
                                     <rect key="frame" x="0.0" y="98.5" width="159" height="83"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -171,7 +171,7 @@
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dm4-Ms-zho">
+                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dm4-Ms-zho">
                                     <rect key="frame" x="0.0" y="197.5" width="159" height="82.5"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
@@ -197,16 +197,19 @@
                     </constraints>
                 </view>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oDG-Hz-Fop">
-                    <rect key="frame" x="0.0" y="684" width="414" height="41"/>
+                    <rect key="frame" x="0.0" y="674" width="414" height="41"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="esC-ar-LSA"/>
                     </constraints>
                     <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
-                        <segment title=""/>
-                        <segment title=""/>
+                        <segment title="猜你喜欢"/>
+                        <segment title="精品海淘"/>
+                        <segment title="限时折扣"/>
+                        <segment title="家家热卖"/>
                     </segments>
+                    <connections>
+                        <action selector="segmentAction:" destination="iN0-l3-epB" eventType="valueChanged" id="n9z-eA-phS"/>
+                    </connections>
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -231,13 +234,20 @@
                 <outlet property="img3" destination="Dm4-Ms-zho" id="VIC-1S-Ykd"/>
                 <outlet property="img4" destination="ss6-me-LPG" id="TCq-TI-TgM"/>
                 <outlet property="lunboView" destination="4af-hv-Sf9" id="uiC-zp-DVz"/>
+                <outlet property="stackView1" destination="vbi-iC-acE" id="2KU-Nj-QGr"/>
+                <outlet property="stackView2" destination="XXY-gy-CMw" id="b0N-jz-Mmh"/>
+                <outlet property="stackView3" destination="BIz-1b-ONg" id="ulc-Kg-AgS"/>
+                <outlet property="stackView4" destination="Shp-PZ-WxX" id="thP-c2-jQu"/>
             </connections>
-            <point key="canvasLocation" x="-942.02898550724649" y="123.88392857142857"/>
+            <point key="canvasLocation" x="-441" y="-12"/>
         </view>
     </objects>
     <resources>
         <image name="111.png" width="279" height="123"/>
-        <image name="icon_tabbar_mine_selected.png" width="26" height="26"/>
+        <image name="meishi.png" width="200" height="200"/>
+        <image name="nanzhuang.png" width="200" height="200"/>
+        <image name="nvzhuang.png" width="200" height="200"/>
+        <image name="tongzhuang.png" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

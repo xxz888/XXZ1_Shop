@@ -17,6 +17,8 @@
 #import "UIImage+Category.h"
 #import "XXZHttpUtil.h"
 #import "MJRefresh/MJRefresh.h"
+#import "UIView+Extension.h"
+
 #import <UIImageView+WebCache.h>
 //获取系统对象
 #define kApplication        [UIApplication sharedApplication]

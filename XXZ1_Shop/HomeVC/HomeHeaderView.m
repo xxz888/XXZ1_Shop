@@ -25,4 +25,12 @@
     }
     return self;
 }
+- (IBAction)segmentAction:(UISegmentedControl *)seg {
+    
+    NSInteger i = seg.selectedSegmentIndex;
+    NSLog(@"切换了状态 %lu",i);
+    if (self.clickSegmentBlock) {
+        self.clickSegmentBlock(i);
+    }
+}
 @end
