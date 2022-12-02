@@ -10,6 +10,7 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "MineViewController.h"
+#import "XQSettingViewController.h"
 
 #import "BaseNavigationViewController.h"
 
@@ -44,7 +45,7 @@
     [self setupChildViewController:VC3 title:@"消息" imageName:@"icon_tabbar_merchant_normal" seleceImageName:@"icon_tabbar_merchant_selected"];
     
     
-    MineViewController * VC4 = [[MineViewController alloc]init];
+    XQSettingViewController * VC4 = [[XQSettingViewController alloc]init];
     [self setupChildViewController:VC4 title:@"我的" imageName:@"icon_tabbar_mine" seleceImageName:@"icon_tabbar_mine_selected"];
     
     

@@ -147,6 +147,7 @@
         HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
         vc.cid = @"1";
         vc.navTitle = @"女装";
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }];
     
@@ -154,7 +155,7 @@
         HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
         vc.cid = @"2";
         vc.navTitle = @"母婴";
-
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }];
     
@@ -162,7 +163,7 @@
         HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
         vc.cid = @"9";
         vc.navTitle = @"男装";
-
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }];
     
@@ -170,6 +171,7 @@
         HomeClassifyViewController * vc = [[HomeClassifyViewController alloc]init];
         vc.cid = @"6";
         vc.navTitle = @"美食";
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }];
 }

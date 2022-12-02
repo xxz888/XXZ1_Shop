@@ -16,6 +16,8 @@ pod 'MBProgressHUD', '~> 0.9.2'
 pod 'DZNEmptyDataSet'
 pod 'LSTPopView'
 pod 'IQKeyboardManager'
-
-
+pod 'YYCache'
+pod 'YYModel'
+pod 'YYCategories'
+pod 'Meiqia'
 end

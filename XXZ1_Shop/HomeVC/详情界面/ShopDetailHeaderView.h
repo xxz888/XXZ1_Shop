@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIImageView *collectBuy;
 @property (weak, nonatomic) IBOutlet UIImageView *backImv;
 @property (weak, nonatomic) IBOutlet UIView *bannerView;
+@property (weak, nonatomic) IBOutlet UIButton *buyAction;
+@property (weak, nonatomic) IBOutlet UIButton *collectBtn;
 
 @end
 

@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import "BaseTabBarViewController.h"
-
+#import <MeiQiaSDK/MQManager.h>
 @interface AppDelegate ()
 
 @end
@@ -38,6 +38,19 @@
     //通知红点
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
    
+    self.collectionArray = [[NSMutableArray alloc]init];
+    [[NSUserDefaults standardUserDefaults] setValue:self.collectionArray forKey:@"collectGoods"];
+
+    
+    [MQManager initWithAppkey:@"4e8f68376b2631a96dc3e47b52ac080d" completion:^(NSString *clientId, NSError *error) {
+            if (!error) {
+                NSLog(@"美洽 SDK：初始化成功");
+            } else {
+                NSLog(@"error:%@",error);
+            }
+        }];
+    
+    
     return YES;
 }
 
