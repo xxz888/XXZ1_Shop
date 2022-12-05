@@ -39,10 +39,10 @@
 
     
     SecondViewController * VC2 = [[SecondViewController alloc]init];
-    [self setupChildViewController:VC2 title:@"分类" imageName:@"icon_tabbar_homepage" seleceImageName:@"icon_tabbar_homepage_selected"];
+    [self setupChildViewController:VC2 title:@"订单" imageName:@"icon_tabbar_homepage" seleceImageName:@"icon_tabbar_homepage_selected"];
     
     ThirdViewController * VC3 = [[ThirdViewController alloc]init];
-    [self setupChildViewController:VC3 title:@"消息" imageName:@"icon_tabbar_merchant_normal" seleceImageName:@"icon_tabbar_merchant_selected"];
+    [self setupChildViewController:VC3 title:@"9.9包邮" imageName:@"icon_tabbar_merchant_normal" seleceImageName:@"icon_tabbar_merchant_selected"];
     
     
     XQSettingViewController * VC4 = [[XQSettingViewController alloc]init];

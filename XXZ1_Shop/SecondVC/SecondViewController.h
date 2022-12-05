@@ -10,6 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : BaseViewController
+@property (weak, nonatomic) IBOutlet UITableView *xxzTableView;
+- (IBAction)segmentAction:(id)sender;
 
 @end
 

@@ -107,6 +107,21 @@
 		6FC48E092939DB1400A3DC70 /* SuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC48E082939DB1400A3DC70 /* SuspensionButton.m */; };
 		6FC48E0B2939DB9A00A3DC70 /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC48E0A2939DB9A00A3DC70 /* collection.png */; };
 		6FC48E0E2939DD3600A3DC70 /* WMDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC48E0C2939DD3600A3DC70 /* WMDragView.m */; };
+		6FC60899293DD09C006387C5 /* JXTouSuHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC6088D293DD09C006387C5 /* JXTouSuHeaderModel.m */; };
+		6FC6089A293DD09C006387C5 /* ProblemTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC6088F293DD09C006387C5 /* ProblemTitleModel.m */; };
+		6FC6089B293DD09C006387C5 /* problemCenter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FC60891293DD09C006387C5 /* problemCenter.plist */; };
+		6FC6089C293DD09C006387C5 /* AnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC60892293DD09C006387C5 /* AnswerModel.m */; };
+		6FC6089D293DD09C006387C5 /* AnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC60895293DD09C006387C5 /* AnswerCell.m */; };
+		6FC6089E293DD09C006387C5 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC60897293DD09C006387C5 /* AnswerCell.xib */; };
+		6FC6089F293DD09C006387C5 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC60898293DD09C006387C5 /* HeadView.m */; };
+		6FC608A3293DD0B7006387C5 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC608A0293DD0B7006387C5 /* HelpViewController.m */; };
+		6FC608A4293DD0B7006387C5 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC608A2293DD0B7006387C5 /* HelpViewController.xib */; };
+		6FC608A8293DDA0B006387C5 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC608A6293DDA0B006387C5 /* SecondTableViewCell.m */; };
+		6FC608A9293DDA0B006387C5 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC608A7293DDA0B006387C5 /* SecondTableViewCell.xib */; };
+		6FC608AD293DEDF9006387C5 /* BYShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC608AB293DEDF9006387C5 /* BYShopCell.m */; };
+		6FC608AE293DEDF9006387C5 /* BYShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC608AC293DEDF9006387C5 /* BYShopCell.xib */; };
+		6FC608B3293DEF4D006387C5 /* XXZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC608B1293DEF4D006387C5 /* XXZLoginViewController.m */; };
+		6FC608B4293DEF4D006387C5 /* XXZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC608B2293DEF4D006387C5 /* XXZLoginViewController.xib */; };
 		6FDFE89A2935AC4400DDD87B /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFE8762935AC4400DDD87B /* UIViewController+ImagePicker.m */; };
 		6FDFE89B2935AC4400DDD87B /* UIImageView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFE8772935AC4400DDD87B /* UIImageView+Category.m */; };
 		6FDFE89C2935AC4400DDD87B /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFE87A2935AC4400DDD87B /* NSArray+Category.m */; };
@@ -270,6 +285,30 @@
 		6FC48E0A2939DB9A00A3DC70 /* collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection.png; sourceTree = "<group>"; };
 		6FC48E0C2939DD3600A3DC70 /* WMDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDragView.m; sourceTree = "<group>"; };
 		6FC48E0D2939DD3600A3DC70 /* WMDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDragView.h; sourceTree = "<group>"; };
+		6FC6088C293DD09C006387C5 /* ProblemTitleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemTitleModel.h; sourceTree = "<group>"; };
+		6FC6088D293DD09C006387C5 /* JXTouSuHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTouSuHeaderModel.m; sourceTree = "<group>"; };
+		6FC6088E293DD09C006387C5 /* AnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerModel.h; sourceTree = "<group>"; };
+		6FC6088F293DD09C006387C5 /* ProblemTitleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemTitleModel.m; sourceTree = "<group>"; };
+		6FC60890293DD09C006387C5 /* JXTouSuHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTouSuHeaderModel.h; sourceTree = "<group>"; };
+		6FC60891293DD09C006387C5 /* problemCenter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = problemCenter.plist; sourceTree = "<group>"; };
+		6FC60892293DD09C006387C5 /* AnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerModel.m; sourceTree = "<group>"; };
+		6FC60894293DD09C006387C5 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		6FC60895293DD09C006387C5 /* AnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerCell.m; sourceTree = "<group>"; };
+		6FC60896293DD09C006387C5 /* AnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerCell.h; sourceTree = "<group>"; };
+		6FC60897293DD09C006387C5 /* AnswerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		6FC60898293DD09C006387C5 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		6FC608A0293DD0B7006387C5 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		6FC608A1293DD0B7006387C5 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		6FC608A2293DD0B7006387C5 /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		6FC608A5293DDA0B006387C5 /* SecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
+		6FC608A6293DDA0B006387C5 /* SecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
+		6FC608A7293DDA0B006387C5 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		6FC608AA293DEDF9006387C5 /* BYShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYShopCell.h; sourceTree = "<group>"; };
+		6FC608AB293DEDF9006387C5 /* BYShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYShopCell.m; sourceTree = "<group>"; };
+		6FC608AC293DEDF9006387C5 /* BYShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BYShopCell.xib; sourceTree = "<group>"; };
+		6FC608B0293DEF4D006387C5 /* XXZLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXZLoginViewController.h; sourceTree = "<group>"; };
+		6FC608B1293DEF4D006387C5 /* XXZLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXZLoginViewController.m; sourceTree = "<group>"; };
+		6FC608B2293DEF4D006387C5 /* XXZLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XXZLoginViewController.xib; sourceTree = "<group>"; };
 		6FDFE8762935AC4400DDD87B /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePicker.m"; sourceTree = "<group>"; };
 		6FDFE8772935AC4400DDD87B /* UIImageView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Category.m"; sourceTree = "<group>"; };
 		6FDFE8782935AC4400DDD87B /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
@@ -381,6 +420,7 @@
 		6F54B56D2935A1C80068A5B7 /* XXZ1_Shop */ = {
 			isa = PBXGroup;
 			children = (
+				6FC608AF293DEF39006387C5 /* LoginVC */,
 				6F54B59B2935A6650068A5B7 /* Resource */,
 				6F54B58C2935A3FF0068A5B7 /* BaseVC */,
 				6F54B58E2935A3FF0068A5B7 /* Category */,
@@ -409,6 +449,9 @@
 				6F5F37692935B10B00E5B69E /* SecondViewController.h */,
 				6F5F376A2935B10B00E5B69E /* SecondViewController.m */,
 				6F5F376B2935B10B00E5B69E /* SecondViewController.xib */,
+				6FC608A5293DDA0B006387C5 /* SecondTableViewCell.h */,
+				6FC608A6293DDA0B006387C5 /* SecondTableViewCell.m */,
+				6FC608A7293DDA0B006387C5 /* SecondTableViewCell.xib */,
 			);
 			path = SecondVC;
 			sourceTree = "<group>";
@@ -435,6 +478,7 @@
 		6F54B58A2935A3690068A5B7 /* MineVC */ = {
 			isa = PBXGroup;
 			children = (
+				6FC6088A293DD09C006387C5 /* 帮助中心 */,
 				6FC48DFE2939D8E400A3DC70 /* 我的收藏 */,
 				6FC48DED2939D28500A3DC70 /* Setting */,
 				6FC48DEB2939D28500A3DC70 /* XQSettingHeader.h */,
@@ -453,6 +497,9 @@
 		6F54B58B2935A3690068A5B7 /* ThirdVC */ = {
 			isa = PBXGroup;
 			children = (
+				6FC608AA293DEDF9006387C5 /* BYShopCell.h */,
+				6FC608AB293DEDF9006387C5 /* BYShopCell.m */,
+				6FC608AC293DEDF9006387C5 /* BYShopCell.xib */,
 				6F5F376E2935B11900E5B69E /* ThirdViewController.h */,
 				6F5F376F2935B11900E5B69E /* ThirdViewController.m */,
 				6F5F37702935B11900E5B69E /* ThirdViewController.xib */,
@@ -652,6 +699,54 @@
 			path = "我的收藏";
 			sourceTree = "<group>";
 		};
+		6FC6088A293DD09C006387C5 /* 帮助中心 */ = {
+			isa = PBXGroup;
+			children = (
+				6FC608A1293DD0B7006387C5 /* HelpViewController.h */,
+				6FC608A0293DD0B7006387C5 /* HelpViewController.m */,
+				6FC608A2293DD0B7006387C5 /* HelpViewController.xib */,
+				6FC6088B293DD09C006387C5 /* M */,
+				6FC60893293DD09C006387C5 /* V */,
+			);
+			path = "帮助中心";
+			sourceTree = "<group>";
+		};
+		6FC6088B293DD09C006387C5 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				6FC6088C293DD09C006387C5 /* ProblemTitleModel.h */,
+				6FC6088F293DD09C006387C5 /* ProblemTitleModel.m */,
+				6FC6088E293DD09C006387C5 /* AnswerModel.h */,
+				6FC6088D293DD09C006387C5 /* JXTouSuHeaderModel.m */,
+				6FC60890293DD09C006387C5 /* JXTouSuHeaderModel.h */,
+				6FC60891293DD09C006387C5 /* problemCenter.plist */,
+				6FC60892293DD09C006387C5 /* AnswerModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		6FC60893293DD09C006387C5 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				6FC60894293DD09C006387C5 /* HeadView.h */,
+				6FC60895293DD09C006387C5 /* AnswerCell.m */,
+				6FC60896293DD09C006387C5 /* AnswerCell.h */,
+				6FC60897293DD09C006387C5 /* AnswerCell.xib */,
+				6FC60898293DD09C006387C5 /* HeadView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		6FC608AF293DEF39006387C5 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				6FC608B0293DEF4D006387C5 /* XXZLoginViewController.h */,
+				6FC608B1293DEF4D006387C5 /* XXZLoginViewController.m */,
+				6FC608B2293DEF4D006387C5 /* XXZLoginViewController.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
 		6FDFE8752935AC4400DDD87B /* UIView+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +886,7 @@
 				6F54B5C92935A6650068A5B7 /* icon_tabbar_nearby.png in Resources */,
 				6F54B5C62935A6650068A5B7 /* icon_tabbar_mine@2x.png in Resources */,
 				6FC48E052939D8E400A3DC70 /* MyCollectionCell.xib in Resources */,
+				6FC608A4293DD0B7006387C5 /* HelpViewController.xib in Resources */,
 				6F54B5C32935A6650068A5B7 /* icon_tabbar_misc.png in Resources */,
 				6F54B5B92935A6650068A5B7 /* close_icon@3x.png in Resources */,
 				6FC48DE529399BF500A3DC70 /* 2.plist in Resources */,
@@ -802,14 +898,18 @@
 				6FC48DCF2939935D00A3DC70 /* dingwei.png in Resources */,
 				6F54B5C12935A6650068A5B7 /* icon_tabbar_homepage@2x.png in Resources */,
 				6F54B5C72935A6650068A5B7 /* icon_tabbar_mine_selected@2x.png in Resources */,
+				6FC608B4293DEF4D006387C5 /* XXZLoginViewController.xib in Resources */,
+				6FC6089E293DD09C006387C5 /* AnswerCell.xib in Resources */,
 				6F54B5CF2935A6650068A5B7 /* icon_tabbar_merchant_normal.png in Resources */,
 				6F54B5D12935A6650068A5B7 /* icon_tabbar_misc@2x.png in Resources */,
 				6F0E6C9F2937477200F93069 /* MRShopCell.xib in Resources */,
 				6F0E6CE2293755D800F93069 /* ShopDetailTableViewCell.xib in Resources */,
 				6F5F379D2935EBC900E5B69E /* HomeTableViewCell.xib in Resources */,
 				6FC48DFA2939D28500A3DC70 /* XQSettingTableViewCell.xib in Resources */,
+				6FC6089B293DD09C006387C5 /* problemCenter.plist in Resources */,
 				6FC48DFD2939D59200A3DC70 /* XQSettingViewController.xib in Resources */,
 				6F54B5D32935A6650068A5B7 /* back_icon@2x.png in Resources */,
+				6FC608A9293DDA0B006387C5 /* SecondTableViewCell.xib in Resources */,
 				6F5F37A22935F79D00E5B69E /* HomeHeaderView.xib in Resources */,
 				6F54B5D22935A6650068A5B7 /* icon_tabbar_mine_selected.png in Resources */,
 				6F54B5BA2935A6650068A5B7 /* close_icon@2x.png in Resources */,
@@ -829,6 +929,7 @@
 				6FC48DFB2939D28500A3DC70 /* XQSettingHeader.xib in Resources */,
 				6FC48DC92939935D00A3DC70 /* meishi.png in Resources */,
 				6FC48DBD2939905100A3DC70 /* HomeAffirmViewController.xib in Resources */,
+				6FC608AE293DEDF9006387C5 /* BYShopCell.xib in Resources */,
 				6FC48DF82939D28500A3DC70 /* Setting.plist in Resources */,
 				6F5F376D2935B10B00E5B69E /* SecondViewController.xib in Resources */,
 				6F54B5BC2935A6650068A5B7 /* icon_tabbar_nearby_selected.png in Resources */,
@@ -891,6 +992,7 @@
 				6FC48E0E2939DD3600A3DC70 /* WMDragView.m in Sources */,
 				6F54B5762935A1C80068A5B7 /* ViewController.m in Sources */,
 				6FC48E042939D8E400A3DC70 /* MyCollectionCell.m in Sources */,
+				6FC6089C293DD09C006387C5 /* AnswerModel.m in Sources */,
 				6F54B5972935A5C30068A5B7 /* BaseNavigationViewController.m in Sources */,
 				6FC48DBC2939905100A3DC70 /* HomeAffirmViewController.m in Sources */,
 				6F5F37A02935F5A500E5B69E /* HomeHeaderView.m in Sources */,
@@ -901,21 +1003,28 @@
 				6FDFE8A82935AC4400DDD87B /* NSString+Category.m in Sources */,
 				6F0E6CE6293755D900F93069 /* ShopDetailViewController.m in Sources */,
 				6F0E6C962937474200F93069 /* HomeClassifyViewController.m in Sources */,
+				6FC608A8293DDA0B006387C5 /* SecondTableViewCell.m in Sources */,
 				6F5F37B42936009100E5B69E /* JDUIFactory.m in Sources */,
 				6FDFE89A2935AC4400DDD87B /* UIViewController+ImagePicker.m in Sources */,
+				6FC60899293DD09C006387C5 /* JXTouSuHeaderModel.m in Sources */,
 				6FC48DF52939D28500A3DC70 /* XQSettingViewController.m in Sources */,
 				6FC48DE629399BF500A3DC70 /* AddressModel.m in Sources */,
 				6F54B5912935A4310068A5B7 /* BaseViewController.m in Sources */,
 				6FDFE89C2935AC4400DDD87B /* NSArray+Category.m in Sources */,
+				6FC608B3293DEF4D006387C5 /* XXZLoginViewController.m in Sources */,
 				6FDFE89B2935AC4400DDD87B /* UIImageView+Category.m in Sources */,
 				6FC48DF92939D28500A3DC70 /* XQSettingTableViewCell.m in Sources */,
+				6FC608AD293DEDF9006387C5 /* BYShopCell.m in Sources */,
+				6FC6089D293DD09C006387C5 /* AnswerCell.m in Sources */,
 				6F5F37B72936011B00E5B69E /* UIView+JDView.m in Sources */,
 				6FC48DF62939D28500A3DC70 /* XQSettingHeader.m in Sources */,
 				6FC48E092939DB1400A3DC70 /* SuspensionButton.m in Sources */,
 				6FDFE8A52935AC4400DDD87B /* UIView+Category.m in Sources */,
+				6FC608A3293DD0B7006387C5 /* HelpViewController.m in Sources */,
 				6F0E6CC929374A3700F93069 /* UIView+Extension.m in Sources */,
 				6F5F37A82935F9D200E5B69E /* ANPagecontrol.m in Sources */,
 				6F5F37712935B11900E5B69E /* ThirdViewController.m in Sources */,
+				6FC6089F293DD09C006387C5 /* HeadView.m in Sources */,
 				6FC48DD72939985900A3DC70 /* HomeAddAddressViewController.m in Sources */,
 				6FC48DF72939D28500A3DC70 /* XQSettingItem.m in Sources */,
 				6F0E6CA12937477200F93069 /* MRWaterflowLayout.m in Sources */,
@@ -929,6 +1038,7 @@
 				6FC48DE429399BF500A3DC70 /* AddressAreaModel.m in Sources */,
 				6F5F37A92935F9D200E5B69E /* ANBannerVIew.m in Sources */,
 				6FDFE8A32935AC4400DDD87B /* UIViewController+BackButtonHandler.m in Sources */,
+				6FC6089A293DD09C006387C5 /* ProblemTitleModel.m in Sources */,
 				6F0E6CE3293755D800F93069 /* ShopDetailHeaderView.m in Sources */,
 				6F0E6CA02937477200F93069 /* MRShop.m in Sources */,
 				6F0E6CE4293755D800F93069 /* ShopDetailTableViewCell.m in Sources */,

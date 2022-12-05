@@ -16,6 +16,10 @@
 #import <MeiQiaSDK/MQManager.h>
 #import "MQChatViewController.h"
 #import "MQChatViewManager.h"
+#import "HomeAddAddressViewController.h"
+#import "HelpViewController.h"
+#import "XXZLoginViewController.h"
+
 @interface XQSettingViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIImageView *headerBgImageView;
@@ -121,7 +125,7 @@
 
     XQSettingSection *section = self.sectionArray[indexPath.section];
     XQSettingItem *item = section.items[indexPath.row];
-    if ([item.title isEqualToString:@"收藏"]) {
+    if ([item.title isEqualToString:@"我的收藏"]) {
         MyCollectionController * vc = [[MyCollectionController alloc]init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
@@ -200,6 +204,53 @@
         [chatViewManager pushMQChatViewControllerInViewController:self.navigationController];
 
     }
+    if ([item.title isEqualToString:@"版本升级"]) {
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"已经是最新版本";
+        hud.margin = 10.f;
+        hud.yOffset = 150.f;
+        hud.removeFromSuperViewOnHide = YES;
+        [hud hide:YES afterDelay:2];
+    }
+    if ([item.title isEqualToString:@"收货地址"]) {
+        HomeAddAddressViewController * vc = [HomeAddAddressViewController alloc];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
+    if ([item.title isEqualToString:@"帮助中心"]) {
+        HelpViewController * vc = [HelpViewController alloc];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
+    if ([item.title isEqualToString:@"退出账号"]) {
+        
+        //创建对象
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"确定退出登录吗？" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+           
+        //添加销毁按钮
+        UIAlertAction* destructiveBtn = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
+            
+            AppDelegate *app = (AppDelegate *)[[UIApplication  sharedApplication] delegate];
+            XXZLoginViewController * vc = [XXZLoginViewController alloc];
+            BaseNavigationViewController * nav = [[BaseNavigationViewController alloc]initWithRootViewController:vc];
+            app.window.rootViewController = nav;
+        }];
+        [alert addAction: destructiveBtn];
+
+
+        //添加取消按钮
+        UIAlertAction* cancelBtn = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+          
+        }];
+        [alert addAction:cancelBtn];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+
+    }
+    
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

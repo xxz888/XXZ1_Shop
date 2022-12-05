@@ -19,8 +19,9 @@
 #import "MJRefresh/MJRefresh.h"
 #import "UIView+Extension.h"
 #import "MBProgressHUD.h"
-
+#import "BaseNavigationViewController.h"
 #import <UIImageView+WebCache.h>
+#import "AppDelegate.h"
 //获取系统对象
 #define kApplication        [UIApplication sharedApplication]
 #define kAppWindow          [UIApplication sharedApplication].delegate.window

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>交易成功前，您可以登录手淘 -【已买到的宝贝】找到对应订单，点击【退款】。交易成功后，您可在15天内登陆手淘 -【已买到的宝贝】找到对应订单，点击【申请售后】。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>银行卡、支付宝余额的钱款，您都可以通过联系客服，查询钱款收支明细。</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>亲，您可以点开订单页面找到【修改地址】的按钮，选择您需要的地址即可，若页面无修改地址按钮，则表示不支持线上修改，建议您可以联系卖家协商处理；当然您也可以选择【申请退款】然后重新下单填写正确的地址。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>商品下单了发现收货信息填错了，怎么办？</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>目前不分场景退买家余额。
+
+举例：A让B代付合并的多笔订单，B支付出钱，退款到A账户。
+
+*温馨提示：
+
+使用银行卡支付的，钱款从支付宝会退回到银行卡中，银行处理的时间一般是1~5个工作日。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>合并多笔订单代付：</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>信息核实通过后，平台客服会给会员发送信息披露表单，需会员填写披露表单；</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>如何查看卖家的个人信息？
+</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>亲，您可以进入“已买到的宝贝”找到对应的订单，点击商品链接进入订单详情，下拉至最下方可以查看订单备注哦。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>如何查看订单备注</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>若已经下单了，可以联系卖家尝试修改收货地址哦~请在【已买到的宝贝】，找到您需要修改地址的订单，点击【和我联系】，通过跟卖家协商进行修改地址。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>如何设置/新增/删除收货地址？</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>亲，关于您反馈的问题，您可以及时联系商家拦截物流或者转运，若商家未配合且您未收到货物，建议您可以及时申请退款，感谢您的支持和理解，祝您购物愉快！
+
+</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>已经修改地址成功，商家还是发到了原来的地址怎么办？
+</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>1、商品拍下24小时内未付款，系统会自动关闭订单；
+
+2、拍下商品操作付款前，买卖双方均可以自行关闭交易，您可以联系卖家，核实是否是卖家关闭；
+
+3、系统会核实您的交易，若交易存在欺诈风险，系统会关闭交易，以保障亲爱哒钱款安全，此种情况多出现在虚拟商品哦！</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>为什么我的交易被关闭了
+</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>若您购买的商品为自动发货商品，只要拍下商品，完成支付宝付款成功后，交易状态即刻会变更为“卖家已发货”，同时系统会自动发送卡号和密码，出现“查看卡号密码”的按钮。
+
+</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>购买自动发货商品，买家怎么收货？
+</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>如订单回收站依然找不到订单，则代表订单已被永久删除，将无法再恢复。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>订单回收站怎么找不到删除的订单？
+</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>亲，宝贝选择“匿名购买”确认后，是无法再修改为非匿名购买的，即实名购买。
+
+</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>选择匿名购买后，是否可以更改为实名购买？
+</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>1、超卖的定义？当宝贝库存接近0时，如果多个买家同时付款购买此宝贝，将会出现“超卖缺货”现象。
+
+2、如何判断是否超卖？“已买到的宝贝”/“已卖出的宝贝”订单中有超卖的标志。
+
+3、超卖的交易怎么办？请买家申请退款，点此查看如何申请退款。
+
+4、超卖的交易卖家是否会发货？“超卖”的宝贝商家可能无法给您正常发货，建议联系卖家确认。
+
+5、超卖交易是否可以投诉维权？产生超卖缺货这种情况是商家无法控制中，并且发生这种情况的概率极低， 所以这种“超卖”情况不能享受缺货的赔付，请买家谅解。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>宝贝出现超卖是什么意思？
+</string>
+	</dict>
+</array>
+</plist>
